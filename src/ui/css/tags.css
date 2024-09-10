@@ -1,0 +1,17 @@
+.base-button {
+    background-color: inherit;
+    border: 1px solid var(--contrast-color);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 24px 32px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 10%;
+    transition: .4s ease-in-out;
+}
+
+.base-button:hover {
+    box-shadow: 0 0 10px 0 var(--contrast-color);
+}

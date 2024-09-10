@@ -1,0 +1,19 @@
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 4px;
+
+    .logo {
+        width: 297px;
+        z-index: 15;
+    }
+
+    .bread-top {
+        position: absolute;
+        z-index: 10;
+        width: 501px;
+        left: 172px;
+        top: 0;
+    }
+}
