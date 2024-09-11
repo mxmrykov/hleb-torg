@@ -1,0 +1,6 @@
+.wwus-parent {
+    width: 93%;
+    overflow-x: scroll;
+    justify-content: space-between;
+    margin: 0 auto;
+}

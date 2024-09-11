@@ -9,6 +9,14 @@ import ForWhom from "../blocks/ForWhom.tsx";
 import rect from "../../content/pics/Rectangle4.png"
 // @ts-ignore
 import ForRetail from "../blocks/ForRetail.tsx";
+// @ts-ignore
+import HighTechProcess from "../blocks/HighTechProcess.tsx";
+// @ts-ignore
+import ForHoREC from "../blocks/ForHoREC.tsx";
+// @ts-ignore
+import WorkWithUs from "../blocks/WorkWithUs.tsx";
+// @ts-ignore
+import Footer from "../blocks/Footer.tsx";
 
 export default function Home(): React.JSX.Element {
     return <section className="home-page">
@@ -21,5 +29,19 @@ export default function Home(): React.JSX.Element {
             className="rect-divider"
         />
         <ForRetail/>
+        <img
+            src={rect}
+            alt="rect"
+            className="rect-divider-right"
+        />
+        <HighTechProcess/>
+        <ForHoREC/>
+        <img
+            src={rect}
+            alt="rect"
+            className="rect-divider wwus"
+        />
+        <WorkWithUs/>
+        <Footer/>
     </section>
 }

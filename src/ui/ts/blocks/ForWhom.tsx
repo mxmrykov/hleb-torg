@@ -20,7 +20,7 @@ export default function ForWhom(): React.JSX.Element {
         }}
     >
         <article>
-            <span className={"line-center"}>
+            <span className="line-center">
                 <img
                     alt="rect"
                     src={rect}

@@ -7,6 +7,21 @@
     --base-font-weight: 700;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--contrast-color);
+    width: 5px;
+    border-radius: 10px;
+}
+
+::selection {
+    background-color: rgba(227, 153, 8, .3);
+}
+
 body, html {
     margin: 0;
     background-color: var(--base-bg-color);
@@ -14,6 +29,8 @@ body, html {
     font-weight: var(--base-font-weight);
     transition: 0.2s ease !important;
     list-style: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .rect-divider {
@@ -21,6 +38,18 @@ body, html {
     transform: translateX(-139px);
     position: absolute;
     margin-top: -100px;
+}
+
+.wwus {
+    margin-top: -650px
+}
+
+.rect-divider-right {
+    position: absolute;
+    right: -60px;
+    width: 153px;
+    margin-top: -60px;
+    transform: scaleX(-1);
 }
 
 .rect-top {
@@ -38,7 +67,7 @@ body, html {
 }
 
 .shadow_yel {
-    padding: 40px 40px;
+    padding: 40px;
     border-radius: 100px;
     border: 2px solid var(--contrast-color);
     box-shadow: 0 0 35px 20px var(--contrast-color);
@@ -46,4 +75,14 @@ body, html {
     top: -185px;
     margin-bottom: -75px;
     z-index: 1;
+}
+
+.box-hightech {
+    width: 306px;
+    margin-inline: 10px;
+}
+
+.partner-logo {
+    width: 250px;
+    margin-inline: 10px;
 }

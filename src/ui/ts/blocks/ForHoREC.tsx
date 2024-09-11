@@ -1,15 +1,14 @@
 import * as React from "react";
 // @ts-ignore
+import ForRetailCard from "../elements/ForRetailCard.tsx";
+// @ts-ignore
 import rect from "../../content/pics/Rectangle 2.png"
-import "../../css/elements/for-retail.css"
 // @ts-ignore
 import breadFirst from "../../content/pics/for-retail/bread-1.png"
 // @ts-ignore
 import breadSecond from "../../content/pics/for-retail/bread-2.png"
-// @ts-ignore
-import ForRetailCard from "../elements/ForRetailCard.tsx";
 
-export default function ForRetail(): React.JSX.Element {
+export default function ForHoREC(): React.JSX.Element {
     return <section
         style={{
             marginTop: 150
@@ -18,7 +17,7 @@ export default function ForRetail(): React.JSX.Element {
         <article className="col-center">
             <span className="line-center">
                 <h1>
-                    Хлеб для ритейла
+                    Хлеб для HoRECа
                 </h1>
                 <img
                     alt="rect"
@@ -38,20 +37,20 @@ export default function ForRetail(): React.JSX.Element {
         <article className="line-center wwrap">
             <ForRetailCard
                 Img={breadFirst}
-                Name="Ляпун пшеничный на закваске"
+                Name="Ляпун для сэндвичей пшеничный"
             />
             <ForRetailCard
                 Img={breadSecond}
-                Name="Чиабатта"
+                Name="Ляпун для сэндвичей ржаной"
                 ShadowExt={true}
             />
             <ForRetailCard
                 Img={breadFirst}
-                Name="Витой багет"
+                Name="Ляпун для сендвичей гречневый"
             />
             <ForRetailCard
                 Img={breadSecond}
-                Name="Портоболло мультизерновая"
+                Name="Ляпун для сендвичей пшеничный"
                 ShadowExt={true}
             />
             <ForRetailCard
