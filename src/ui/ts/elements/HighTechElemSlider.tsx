@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export default function HighTechElemSlider({HTFirst, TextHeader, TextParagraph}): React.JSX.Element {
-    return <span className="col-center box-hightech" style={{alignItems: "start"}}>
+    return <span className="col-center box-hightech" style={{alignItems: "start", marginBottom: 20}}>
                 <img
                     alt="natural quality"
                     src={HTFirst}

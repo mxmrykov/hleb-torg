@@ -4,7 +4,10 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
-    min-height: 440px;
+    height: 440px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
 }
 
 .footer-content {
@@ -47,6 +50,10 @@ footer {
 }
 
 .right-bread-footer {
-    width: 600px;
-    margin-bottom: -12px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: 12;
+    right: 0;
+    margin-bottom: -85px;
 }

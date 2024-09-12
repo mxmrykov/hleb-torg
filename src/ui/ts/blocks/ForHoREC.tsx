@@ -28,7 +28,9 @@ export default function ForHoREC(): React.JSX.Element {
             <p
                 style={{
                     color: "grey",
-                    fontWeight: 400
+                    fontWeight: 400,
+                    textAlign: "center",
+                    maxWidth: "95%"
                 }}
             >
                 Краткое описание, пояснение в одном предложении

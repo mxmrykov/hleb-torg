@@ -12,7 +12,8 @@ import ForRetailCard from "../elements/ForRetailCard.tsx";
 export default function ForRetail(): React.JSX.Element {
     return <section
         style={{
-            marginTop: 150
+            marginTop: 150,
+            zIndex: 30
         }}
     >
         <article className="col-center">
@@ -29,7 +30,9 @@ export default function ForRetail(): React.JSX.Element {
             <p
                 style={{
                     color: "grey",
-                    fontWeight: 400
+                    fontWeight: 400,
+                    textAlign: "center",
+                    maxWidth: "95%"
                 }}
             >
                 Краткое описание, пояснение в одном предложении

@@ -11,10 +11,11 @@ export default function ForRetailCard({Img, ShadowExt = false, Name}): React.JSX
                         src={Img}
                         alt="bread"
                         style={{
-                            zIndex: 2
+                            zIndex: 2,
+                            maxWidth: "100%"
                         }}
                     />
-                    <span className="shadow_yel" style={ShadowExt ? {padding: 50, marginBottom: -90, top: -195} : {}}/>
+                    <span className={ShadowExt ? "shadow_yel shadow_yel_ext" : "shadow_yel"} style={ShadowExt ? {padding: 60, marginBottom: -90, top: -210} : {}}/>
                 </span>
         <p
             style={{

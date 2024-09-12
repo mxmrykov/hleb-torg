@@ -6,6 +6,8 @@ import leftBread from "../../content/pics/4-2.png"
 import topBread from "../../content/pics/6.png"
 // @ts-ignore
 import rightBread from "../../content/pics/5-3.png"
+// @ts-ignore
+import Img from "../tags/Img.tsx";
 
 type Time = {
     hours: number,
@@ -80,10 +82,9 @@ export default function Footer(): React.JSX.Element {
             alt="bread"
             className="top-bread-footer"
         />
-        <img
+        <Img
             src={rightBread}
-            alt="bread"
-            className="right-bread-footer"
+            classname="right-bread-footer"
         />
     </footer>
 }

@@ -29,10 +29,10 @@ export default function MainHome(): React.JSX.Element {
             className="bread-third"
         />
         <span>
-            <h1>
-                Ремесленные хлеба Fresh и шоковой заморозки для ритейла и HoReCa
+            <h1 className="main-home-h1">
+                Ремесленные хлеба Fresh и шоковой <br/> заморозки для ритейла и HoReCa
             </h1>
-            <button className="base-button">
+            <button className="base-button main-home-btn">
                 Заказать дегустацию
             </button>
         </span>
@@ -46,6 +46,7 @@ export default function MainHome(): React.JSX.Element {
             alt="bread"
             className="bread-second"
         />
+
         <img
             src={breadBgSecond}
             alt="bread"
