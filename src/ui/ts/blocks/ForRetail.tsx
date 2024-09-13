@@ -9,11 +9,37 @@ import breadSecond from "../../content/pics/for-retail/bread-2.png"
 // @ts-ignore
 import ForRetailCard from "../elements/ForRetailCard.tsx";
 
-export default function ForRetail(): React.JSX.Element {
+export default function ForRetail({setDialog}): React.JSX.Element {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated');
+                entry.target.classList.add('animate__fadeInUp');
+            }
+        });
+    });
+
     return <section
         style={{
             marginTop: 150,
             zIndex: 30
+        }}
+        onLoad={() => {
+            const targetElement = document.querySelector(".wwrap");
+            if (targetElement) {
+                observer.observe(targetElement);
+            }
+
+            const header = document.querySelector(".line-center");
+            if (header) {
+                observer.observe(header);
+            }
+
+            const paragraph = document.querySelector(".line-center-p");
+            if (paragraph) {
+                observer.observe(paragraph);
+            }
         }}
     >
         <article className="col-center">
@@ -34,6 +60,7 @@ export default function ForRetail(): React.JSX.Element {
                     textAlign: "center",
                     maxWidth: "95%"
                 }}
+                className="line-center-p"
             >
                 Краткое описание, пояснение в одном предложении
             </p>
@@ -42,29 +69,35 @@ export default function ForRetail(): React.JSX.Element {
             <ForRetailCard
                 Img={breadFirst}
                 Name="Ляпун пшеничный на закваске"
+                setDialog={setDialog}
             />
             <ForRetailCard
                 Img={breadSecond}
                 Name="Чиабатта"
                 ShadowExt={true}
+                setDialog={setDialog}
             />
             <ForRetailCard
                 Img={breadFirst}
                 Name="Витой багет"
+                setDialog={setDialog}
             />
             <ForRetailCard
                 Img={breadSecond}
                 Name="Портоболло мультизерновая"
                 ShadowExt={true}
+                setDialog={setDialog}
             />
             <ForRetailCard
                 Img={breadFirst}
                 Name="Лаваш крымский"
+                setDialog={setDialog}
             />
             <ForRetailCard
                 Img={breadSecond}
                 Name="Чириолла на закваске"
                 ShadowExt={true}
+                setDialog={setDialog}
             />
         </article>
     </section>

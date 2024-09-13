@@ -15,7 +15,7 @@ type Time = {
     seconds: number
 }
 
-export default function Footer(): React.JSX.Element {
+export default function Footer({setDialog}): React.JSX.Element {
 
     const [remain, setRemain] = useState<Time>()
     const [preloaded, setPreloaded] = useState<boolean>(false)
@@ -60,7 +60,9 @@ export default function Footer(): React.JSX.Element {
             <p>
                 Дополнительное предложение почему это выгодно. Обратный счетчик на кнопке
             </p>
-            <button>
+            <button
+                onClick={setDialog}
+            >
                 Заказать со
                 скидкой
                 <span

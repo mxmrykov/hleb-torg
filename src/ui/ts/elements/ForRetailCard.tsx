@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default function ForRetailCard({Img, ShadowExt = false, Name}): React.JSX.Element {
+export default function ForRetailCard({Img, ShadowExt = false, Name, setDialog}): React.JSX.Element {
     return <li
         className="list-item-menu"
     >
@@ -25,7 +25,10 @@ export default function ForRetailCard({Img, ShadowExt = false, Name}): React.JSX
         >
             {Name}
         </p>
-        <button className="base-button">
+        <button
+            className="base-button"
+            onClick={setDialog}
+        >
             Заказать
         </button>
     </li>

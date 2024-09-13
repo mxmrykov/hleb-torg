@@ -14,9 +14,39 @@ import partnerFifth from "../../content/pics/work-with-us/image 15.png"
 import "../../css/elements/wwus.css"
 
 export default function WorkWithUs(): React.JSX.Element {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated');
+                entry.target.classList.add('animate__fadeInUp');
+            }
+        });
+    });
+
+    const observerLeft = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated');
+                entry.target.classList.add('animate__fadeInRight');
+            }
+        });
+    });
+
     return <section
         style={{
             marginTop: 150
+        }}
+        onLoad={() => {
+            const header = document.querySelector(".lch2");
+            if (header) {
+                observer.observe(header);
+            }
+
+            const targetElement_1 = document.querySelector(".wwus-parent");
+            if (targetElement_1) {
+                observerLeft.observe(targetElement_1);
+            }
         }}
     >
         <article
@@ -24,7 +54,7 @@ export default function WorkWithUs(): React.JSX.Element {
                 marginBottom: 50
             }}
         >
-            <span className="line-center">
+            <span className="line-center lch2">
                 <h1>
                     С нами работают
                 </h1>

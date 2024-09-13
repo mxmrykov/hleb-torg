@@ -15,9 +15,41 @@ import "../../css/elements/for-whom.css"
 import ForWhomCard from "../elements/ForWhomCard.tsx";
 // @ts-ignore
 import Line from "../tags/Line.tsx";
+import "animate.css"
 
 export default function ForWhom(): React.JSX.Element {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated');
+                entry.target.classList.add('animate__fadeInUp');
+            }
+        });
+    });
+
     return <section
+        onLoad={e => {
+            const targetElement = document.querySelector(".for-whom-child");
+            if (targetElement) {
+                observer.observe(targetElement);
+            }
+
+            const targetElement_1 = document.querySelector(".for-whom-child-1");
+            if (targetElement_1) {
+                observer.observe(targetElement_1);
+            }
+
+            const header = document.querySelector(".line-center");
+            if (header) {
+                observer.observe(header);
+            }
+
+            const paragraph = document.querySelector(".line-center-p");
+            if (paragraph) {
+                observer.observe(paragraph);
+            }
+        }}
         className="col-center sec-screen"
         style={{
             marginTop: 25
@@ -41,6 +73,7 @@ export default function ForWhom(): React.JSX.Element {
                     textAlign: "center",
                     maxWidth: "95%"
                 }}
+                className="line-center-p"
             >
                 Краткое описание, пояснение в одном предложении
             </p>
@@ -61,7 +94,7 @@ export default function ForWhom(): React.JSX.Element {
                 />
             </Line>
             <Line
-                classname="for-whom-child"
+                classname="for-whom-child for-whom-child-1"
             >
                 <ForWhomCard
                     src={forWhomThird}

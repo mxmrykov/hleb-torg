@@ -16,11 +16,37 @@ import HighTechElemSlider from "../elements/HighTechElemSlider.tsx";
 import Line from "../tags/Line.tsx";
 
 export default function HighTechProcess(): React.JSX.Element {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated');
+                entry.target.classList.add('animate__fadeInUp');
+            }
+        });
+    });
+
     return <section
         style={{
             marginTop: 150
         }}
         className="col-center"
+        onLoad={() => {
+            const targetElement = document.querySelector(".for-whom-child-0");
+            if (targetElement) {
+                observer.observe(targetElement);
+            }
+
+            const header = document.querySelector(".high-tech-header");
+            if (header) {
+                observer.observe(header);
+            }
+
+            const targetElement_1 = document.querySelector(".for-whom-child-2");
+            if (targetElement_1) {
+                observer.observe(targetElement_1);
+            }
+        }}
     >
         <article style={{marginBottom: 50, maxWidth: "100%"}}>
             <span
@@ -48,7 +74,7 @@ export default function HighTechProcess(): React.JSX.Element {
             classname="for-whom-parent"
         >
             <Line
-                classname="for-whom-child"
+                classname="for-whom-child for-whom-child-0"
             >
                 <HighTechElemSlider
                     HTFirst={HTFirst}
@@ -62,7 +88,7 @@ export default function HighTechProcess(): React.JSX.Element {
                 />
             </Line>
             <Line
-                classname="for-whom-child"
+                classname="for-whom-child for-whom-child-2"
             >
                 <HighTechElemSlider
                     HTFirst={HTThird}
