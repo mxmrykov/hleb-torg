@@ -1,0 +1,69 @@
+.dialog-window {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.dialog-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.non-active {
+    opacity: 0;
+}
+
+.dialog-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--base-bg-color);
+    width: 600px;
+    max-width: 95%;
+    margin: 50px auto;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 25px;
+
+    h1 {
+        color: white;
+        font-size: 32px;
+        text-align: center;
+        margin-block: 10px;
+    }
+
+    p {
+        color: grey;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    span {
+
+        input {
+            width: 320px;
+            max-width: 100%;
+            padding: 20px 24px;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            outline: none;
+            background-color: rgba(255, 255, 255, .05);
+            transition: 0.2s ease;
+            color: white;
+            font-size: 16px;
+        }
+
+        input:focus {
+            border: 1px solid var(--contrast-color);
+        }
+    }
+}
