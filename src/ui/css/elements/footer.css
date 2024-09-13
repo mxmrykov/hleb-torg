@@ -1,0 +1,59 @@
+footer {
+    margin-top: 200px;
+    background-image: linear-gradient(0deg, rgba(227, 153, 8, 1) 0%, rgb(227, 164, 59) 100%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 440px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-content {
+    width: 600px;
+    max-width: 95%;
+    color: white;
+    margin-left: 300px;
+
+    h1 {
+        font-size: 46px;
+        margin: 0;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-size: 26px;
+        font-weight: 400;
+        margin-block: 15px;
+        color: #e8e8e8;
+        letter-spacing: .5px;
+    }
+
+    button {
+        background-color: white;
+        color: black;
+        padding: 24px 32px;
+        font-size: 20px;
+        border-radius: 8px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border: unset;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+}
+
+.top-bread-footer {
+    margin-top: -400px;
+}
+
+.right-bread-footer {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: 12;
+    right: 0;
+    margin-bottom: -85px;
+}

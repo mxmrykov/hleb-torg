@@ -11,16 +11,20 @@ import forWhomThird from "../../content/pics/for-whom/image-4.png"
 import forWhomFourth from "../../content/pics/for-whom/image-5.png"
 
 import "../../css/elements/for-whom.css"
+// @ts-ignore
+import ForWhomCard from "../elements/ForWhomCard.tsx";
+// @ts-ignore
+import Line from "../tags/Line.tsx";
 
 export default function ForWhom(): React.JSX.Element {
     return <section
-        className="col-center"
+        className="col-center sec-screen"
         style={{
             marginTop: 25
         }}
     >
         <article>
-            <span className={"line-center"}>
+            <span className="line-center">
                 <img
                     alt="rect"
                     src={rect}
@@ -33,49 +37,41 @@ export default function ForWhom(): React.JSX.Element {
             <p
                 style={{
                     color: "grey",
-                    fontWeight: 400
+                    fontWeight: 400,
+                    textAlign: "center",
+                    maxWidth: "95%"
                 }}
             >
                 Краткое описание, пояснение в одном предложении
             </p>
         </article>
-        <article className="line-center">
-            <span className="col-center">
-                <img
-                    alt="for-whom"
+        <Line
+            classname="for-whom-parent"
+        >
+            <Line
+                classname="for-whom-child"
+            >
+                <ForWhomCard
                     src={forWhomFirst}
+                    text="Кофейни"
                 />
-                <h3>
-                    Кофейни
-                </h3>
-            </span>
-            <span className="col-center">
-                <img
-                    alt="for-whom"
+                <ForWhomCard
                     src={forWhomSecond}
+                    text="Рестораны"
                 />
-                <h3>
-                    Рестораны
-                </h3>
-            </span>
-            <span className="col-center">
-                <img
-                    alt="for-whom"
+            </Line>
+            <Line
+                classname="for-whom-child"
+            >
+                <ForWhomCard
                     src={forWhomThird}
+                    text="Отели"
                 />
-                <h3>
-                    Отели
-                </h3>
-            </span>
-            <span className="col-center">
-                <img
-                    alt="for-whom"
+                <ForWhomCard
                     src={forWhomFourth}
+                    text="Ритейл"
                 />
-                <h3>
-                    Ритейл
-                </h3>
-            </span>
-        </article>
+            </Line>
+        </Line>
     </section>
 }

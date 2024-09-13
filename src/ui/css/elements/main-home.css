@@ -1,4 +1,5 @@
 .main-home {
+    width: 100%;
     span {
         display: flex;
         flex-direction: column;
@@ -10,7 +11,7 @@
     h1 {
         font-size: 56px;
         width: 1120px;
-        letter-spacing: -1%;
+        letter-spacing: 1px;
         max-width: 95%;
         color: white;
         text-align: center;
@@ -31,6 +32,7 @@
         right: 0;
         transform: rotate(180deg) scaleY(-1);
         max-width: 50%;
+        overflow: hidden;
         top: 180px;
     }
 
@@ -44,9 +46,11 @@
 
     .bread-second {
         position: absolute;
-        width: 320px;
-        right: 0;
-        top: 140px;
+        width: 550px;
+        right: -160px;
+        top: 190px;
+        transform: rotate(255deg);
+        overflow: hidden !important;
     }
 
     .bread-third {
@@ -55,6 +59,7 @@
         left: 430px;
         top: 440px;
         z-index: 1;
+        overflow: hidden;
     }
 
     .bread-fourth {

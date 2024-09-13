@@ -19,18 +19,31 @@
     justify-content: center;
 
     color: white;
+}
 
+.for-whom-parent {
+    flex-wrap: wrap;
+    max-width: 100%;
     span {
         margin-inline: 15px;
+        max-width: 45%;
 
         img {
             width: 306px;
             height: 306px;
-            object-fit: cover;
+            object-fit: contain;
+            max-width: 100%;
         }
 
         h3 {
             font-size: 28px;
         }
     }
+
+
+}
+
+.for-whom-child {
+    max-width: 100%;
+    align-items: flex-start;
 }

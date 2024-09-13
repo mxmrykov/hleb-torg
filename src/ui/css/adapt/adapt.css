@@ -1,0 +1,313 @@
+@media screen and (max-width: 1600px) {
+    .main-home {
+        .bread-first {
+            width: 400px;
+            top: 200px;
+        }
+
+        .rectangle-first {
+            width: 250px;
+            top: 200px;
+        }
+
+        .bread-second {
+            width: 360px;
+            top: 240px;
+            right: -110px
+        }
+
+        .rectangle-second {
+            width: 200px;
+            top: 250px;
+        }
+
+        .main-home-h1 {
+            font-size: 46px;
+        }
+
+        .bread-third {
+            left: 280px;
+        }
+    }
+
+    .rect-divider, .rect-divider-right {
+        display: none;
+    }
+
+    .footer-content {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1390px) {
+    .right-bread-footer {
+        width: 500px;
+        margin-bottom: -85px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .main-home {
+        .bread-fourth {
+            top: 560px;
+            left: -100px;
+
+        }
+
+        .bread-first {
+            width: 350px;
+            top: 70px;
+            transform: rotate(35deg);
+            left: -33px;
+        }
+
+        .rectangle-first {
+            width: 200px;
+            left: -40px;
+            max-width: 30%;
+            top: 0;
+        }
+
+        .bread-second {
+            top: 610px;
+            right: -100px;
+            transform: rotate(0deg);
+            max-width: 70%;
+        }
+
+        .rectangle-second {
+            width: 150px;
+            top: 690px;
+            max-width: 28%;
+        }
+
+        .bread-third {
+            width: 292px;
+            right: -130px;
+            left: auto;
+            top: 200px;
+        }
+
+        .main-home-h1 {
+            font-size: 40px;
+        }
+
+        .main-home-btn {
+            font-size: 16px;
+        }
+    }
+
+    .sec-screen {
+        margin-top: 200px !important;
+    }
+
+    .home-header {
+        .bread-top {
+            display: none;
+        }
+
+        .logo {
+            max-width: 50%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    .main-home {
+        .main-home-h1 {
+            font-size: 32px;
+        }
+
+        .main-home-btn {
+            font-size: 14px;
+        }
+    }
+
+    .col-center .high-tech-header {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .wwus-parent {
+        .partner-logo {
+            width: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-home {
+        .main-home-h1 {
+            font-size: 28px;
+        }
+
+        .main-home-btn {
+            font-size: 12px;
+        }
+    }
+
+    footer {
+
+        .footer-content {
+            h1 {
+                font-size: 32px !important;
+            }
+        }
+    }
+
+    .dialog-window {
+        .dialog-form {
+            span {
+                p {
+                    font-size: 18px;
+                }
+
+                input {
+                    padding: 15px 18px;
+                }
+            }
+            button {
+                padding: 18px 24px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1567px) {
+    .wwrap {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 2688px;
+        white-space: nowrap;
+        justify-content: flex-start;
+
+        .list-item-menu {
+            min-width: 224px;
+            height: 352px;
+            justify-content: space-between;
+
+            img {
+                width: 180px;
+                height: 180px;
+            }
+
+            p {
+                margin-block: 0;
+                max-width: 100%;
+                white-space: normal;
+                word-break: break-all !important;
+                font-size: 20px !important;
+                text-align: center;
+            }
+
+            .col-center {
+                width: 180px;
+                height: 180px;
+            }
+
+            .shadow_yel {
+                top: -115px;
+                padding: 25px;
+                margin-bottom: -35px;
+                box-shadow: 0 0 70px 15px var(--contrast-color);
+            }
+
+            .shadow_yel_ext {
+                top: -135px !important;
+                padding: 40px !important;
+                margin-bottom: -70px !important;
+                box-shadow: 0 0 50px 13px var(--contrast-color) !important;
+            }
+        }
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+
+    .abs-bread-footer {
+        width: 450px;
+        height: 450px;
+        max-width: 85%;
+        position: absolute;
+        z-index: 12;
+        margin: 60px auto;
+        left: 0;
+        right: 0;
+    }
+
+    footer {
+
+        height: 600px;
+
+        flex-direction: column-reverse;
+
+        .footer-content {
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-left: 0;
+            margin-bottom: 25px;
+            max-width: 100%;
+
+            h1 {
+                font-size: 40px;
+                max-width: 90%;
+                margin-inline: 10px;
+            }
+
+            p {
+                font-size: 20px;
+                max-width: 90%;
+                margin-inline: 10px;
+            }
+
+            button {
+                font-size: 16px;
+                max-width: 90%;
+            }
+        }
+
+        .right-bread-footer {
+            display: none;
+        }
+
+        .top-bread-footer {
+            position: absolute;
+            margin-top: 0;
+            right: -320px;
+            width: 450px;
+            z-index: 1;
+            top: 10px;
+        }
+
+        .left-bread-footer {
+            position: absolute;
+            top: 95px;
+            width: 100px;
+            z-index: 1;
+            left: -30px;
+        }
+    }
+}
+
+@media screen and (max-width: 542px) {
+    .high-tech-header {
+        width: 320px;
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .high-tech-header {
+        width: 300px !important;
+        font-size: 24px !important;
+    }
+}
