@@ -17,31 +17,31 @@ type Time = {
 
 export default function Footer({setDialog}): React.JSX.Element {
 
-    const [remain, setRemain] = useState<Time>()
+    // const [remain, setRemain] = useState<Time>()
     const [preloaded, setPreloaded] = useState<boolean>(false)
 
-    function getTimeRemaining() {
-        const dt = new Date()
+    // function getTimeRemaining() {
+    //     const dt = new Date()
+    //
+    //     const hours = 23 - dt.getHours()
+    //     const minutes = 59 - dt.getMinutes()
+    //     const seconds = 59 - dt.getSeconds()
+    //
+    //     setRemain({
+    //         hours: hours,
+    //         minutes: minutes,
+    //         seconds: seconds
+    //     } as Time)
+    // }
 
-        const hours = 23 - dt.getHours()
-        const minutes = 59 - dt.getMinutes()
-        const seconds = 59 - dt.getSeconds()
-
-        setRemain({
-            hours: hours,
-            minutes: minutes,
-            seconds: seconds
-        } as Time)
-    }
-
-    if (!preloaded) {
-        getTimeRemaining()
-        setPreloaded(true)
-    }
-
-    setInterval(() => {
-        getTimeRemaining()
-    }, 1000)
+    // if (!preloaded) {
+    //     getTimeRemaining()
+    //     setPreloaded(true)
+    // }
+    //
+    // setInterval(() => {
+    //     getTimeRemaining()
+    // }, 1000)
 
     return <footer
         className="line-start"
@@ -58,25 +58,24 @@ export default function Footer({setDialog}): React.JSX.Element {
                 Закажитие со скидкой прямо сейчас
             </h1>
             <p>
-                Дополнительное предложение почему это выгодно. Обратный счетчик на кнопке
+                Закажите бесплатную дегустацию для своего бизнеса.
+                Отвечаем в течение 2 часов
             </p>
             <button
                 onClick={setDialog}
             >
-                Заказать со
-                скидкой
-                <span
-                    style={{
-                        color: "#E39908",
-                        marginLeft: 10
-                    }}
-                >
-                    {
-                        (remain?.hours < 10 ? "0" + remain?.hours : remain?.hours) + ":" +
-                        (remain?.minutes < 10 ? "0" + remain?.minutes : remain?.minutes) + ":" +
-                        (remain?.seconds < 10 ? "0" + remain?.seconds : remain?.seconds)
-                    }
-                </span>
+                {/*<span*/}
+                {/*    style={{*/}
+                {/*        color: "#E39908",*/}
+                {/*        marginLeft: 10*/}
+                {/*    }}*/}
+                {/*>*/}
+                {/*    {*/}
+                {/*        (remain?.hours < 10 ? "0" + remain?.hours : remain?.hours) + ":" +*/}
+                {/*        (remain?.minutes < 10 ? "0" + remain?.minutes : remain?.minutes) + ":" +*/}
+                {/*        (remain?.seconds < 10 ? "0" + remain?.seconds : remain?.seconds)*/}
+                {/*    }*/}
+                {/*</span>*/}
             </button>
         </article>
         <img

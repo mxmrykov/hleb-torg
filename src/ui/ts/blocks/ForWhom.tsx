@@ -75,7 +75,7 @@ export default function ForWhom(): React.JSX.Element {
                 }}
                 className="line-center-p"
             >
-                Краткое описание, пояснение в одном предложении
+                Для всех, кому важны скорость изготовления и качество продукта
             </p>
         </article>
         <Line

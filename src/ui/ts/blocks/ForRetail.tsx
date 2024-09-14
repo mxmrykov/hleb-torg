@@ -22,7 +22,7 @@ export default function ForRetail({setDialog}): React.JSX.Element {
 
     return <section
         style={{
-            marginTop: 150,
+            marginTop: 75,
             zIndex: 30
         }}
         onLoad={() => {
@@ -43,9 +43,12 @@ export default function ForRetail({setDialog}): React.JSX.Element {
         }}
     >
         <article className="col-center">
-            <span className="line-center">
-                <h1>
-                    Хлеб для ритейла
+            <span
+                className="line-center"
+                style={{
+                    marginBottom: 25
+                }}>
+                <h1>Хлеб для ритейла
                 </h1>
                 <img
                     alt="rect"
@@ -53,17 +56,6 @@ export default function ForRetail({setDialog}): React.JSX.Element {
                     className="rect-bottom"
                 />
             </span>
-            <p
-                style={{
-                    color: "grey",
-                    fontWeight: 400,
-                    textAlign: "center",
-                    maxWidth: "95%"
-                }}
-                className="line-center-p"
-            >
-                Краткое описание, пояснение в одном предложении
-            </p>
         </article>
         <article className="line-center wwrap">
             <ForRetailCard

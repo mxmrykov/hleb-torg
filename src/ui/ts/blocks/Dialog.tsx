@@ -95,6 +95,11 @@ export default function Dialog({active, cancel, firstLoad}): React.JSX.Element {
             <button
                 className="base-button"
                 onClick={() => {
+                    if (name === "" || city === "" || phone === "") {
+                        alert("Заполните все поля корректно.")
+                        return
+                    }
+
                     axios.post(
                         `https://${host}/api/new-request.php`,
                         {
@@ -110,6 +115,8 @@ export default function Dialog({active, cancel, firstLoad}): React.JSX.Element {
                     ).then(res => {
                         if (res.data.ok) {
                             alert("Заявка успешно создана! Мы свяжемся с вами в ближайшее время.")
+                        } else {
+                            alert("Упс! Произошла ошибка, попробуйте позже.")
                         }
                     })
                 }}

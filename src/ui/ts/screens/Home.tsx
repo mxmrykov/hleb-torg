@@ -57,6 +57,7 @@ export default function Home(): React.JSX.Element {
             alt="rect"
             className="rect-divider"
         />
+        <HighTechProcess/>
         <ForRetail
             setDialog={setUpdate}
         />
@@ -65,7 +66,6 @@ export default function Home(): React.JSX.Element {
             alt="rect"
             className="rect-divider-right"
         />
-        <HighTechProcess/>
         <ForHoREC
             setDialog={setUpdate}
         />

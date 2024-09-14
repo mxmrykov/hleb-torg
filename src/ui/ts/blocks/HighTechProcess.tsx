@@ -28,7 +28,7 @@ export default function HighTechProcess(): React.JSX.Element {
 
     return <section
         style={{
-            marginTop: 150
+            marginTop: 75
         }}
         className="col-center"
         onLoad={() => {
@@ -65,7 +65,7 @@ export default function HighTechProcess(): React.JSX.Element {
                             marginRight: 5
                         }}
                     />
-                    Высокотехнологичный процесс
+                    Что мы предлагаем
                 </h1>
             </span>
         </article>

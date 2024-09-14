@@ -143,8 +143,13 @@
         }
 
         .main-home-btn {
-            font-size: 12px;
+            font-size: 18px;
         }
+    }
+
+    .col-center .high-tech-header {
+        font-size: 24px;
+        text-align: center;
     }
 
     footer {
@@ -152,6 +157,10 @@
         .footer-content {
             h1 {
                 font-size: 32px !important;
+            }
+
+            button::before {
+                content: "Заказать";
             }
         }
     }
@@ -310,4 +319,10 @@
         width: 300px !important;
         font-size: 24px !important;
     }
+}
+
+@media screen and (max-width: 480px){
+    /*.box-hightech {*/
+    /*    height: 359px;*/
+    /*}*/
 }
