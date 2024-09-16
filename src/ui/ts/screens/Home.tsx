@@ -50,20 +50,25 @@ export default function Home(): React.JSX.Element {
         <MainHome
             setDialog={setUpdate}
         />
-        <ForWhom/>
+        <ForWhom
+        />
         <img
             src={rect}
             alt="rect"
             className="rect-divider"
         />
-        <ForRetail/>
+        <HighTechProcess/>
+        <ForRetail
+            setDialog={setUpdate}
+        />
         <img
             src={rect}
             alt="rect"
             className="rect-divider-right"
         />
-        <HighTechProcess/>
-        <ForHoREC/>
+        <ForHoREC
+            setDialog={setUpdate}
+        />
         <img
             src={rect}
             alt="rect"
@@ -74,6 +79,8 @@ export default function Home(): React.JSX.Element {
             src={rightBread}
             classname="abs-bread-footer"
         />
-        <Footer/>
+        <Footer
+            setDialog={setUpdate}
+        />
     </section>
 }

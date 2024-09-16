@@ -43,6 +43,10 @@ footer {
         margin-top: 15px;
         cursor: pointer;
     }
+
+    button::before {
+        content: "Заказать дегустацию";
+    }
 }
 
 .top-bread-footer {
