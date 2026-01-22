@@ -3,12 +3,14 @@ import "../../css/elements/dialog.css"
 import cross from "../../content/pics/cross.png"
 import {useState} from "react";
 import axios from "axios";
+import {useSearchParams} from "react-router-dom";
 
 export default function Dialog({active, cancel, firstLoad}): React.JSX.Element {
 
     const [name, setName] = useState<string>()
     const [city, setCity] = useState<string>()
     const [phone, setPhone] = useState<string>()
+    const [params] = useSearchParams()
 
     const host = window.location.hostname
 
@@ -99,13 +101,17 @@ export default function Dialog({active, cancel, firstLoad}): React.JSX.Element {
                         alert("Заполните все поля корректно.")
                         return
                     }
-
                     axios.post(
                         `https://${host}/api/new-request.php`,
                         {
                             name: name,
                             city: city,
-                            phone: phone
+                            phone: phone,
+                            utm_source: params.get("utm_source"),
+                            utm_medium: params.get("utm_medium"),
+                            utm_campaign: params.get("utm_campaign"),
+                            utm_content: params.get("utm_content"),
+                            utm_term: params.get("utm_term"),
                         },
                         {
                             headers: {

@@ -4,7 +4,7 @@ import ForRetailCard from "../elements/ForRetailCard.tsx";
 // @ts-ignore
 import rect from "../../content/pics/Rectangle 2.png"
 // @ts-ignore
-import breadFirst from "../../content/pics/for-retail/bread-1.png"
+import breadFirst from "../../content/pics/for-retail/bread-1-1.png"
 // @ts-ignore
 import breadSecond from "../../content/pics/for-retail/bread-2.png"
 

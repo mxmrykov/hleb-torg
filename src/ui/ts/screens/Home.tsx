@@ -66,9 +66,9 @@ export default function Home(): React.JSX.Element {
             alt="rect"
             className="rect-divider-right"
         />
-        <ForHoREC
-            setDialog={setUpdate}
-        />
+        {/*<ForHoREC*/}
+        {/*    setDialog={setUpdate}*/}
+        {/*/>*/}
         <img
             src={rect}
             alt="rect"

@@ -1,0 +1,9 @@
+modules.xml
+vcs.xml
+workspace.xml
+hleb-torg.iml
+.idea
+# Default ignored files
+/shelf/
+# Editor-based HTTP Client requests
+/httpRequests/

@@ -85,8 +85,8 @@ export default function ForWhom(): React.JSX.Element {
                 classname="for-whom-child"
             >
                 <ForWhomCard
-                    src={forWhomFirst}
-                    text="Кофейни"
+                    src={forWhomFourth}
+                    text="Ритейл"
                 />
                 <ForWhomCard
                     src={forWhomSecond}
@@ -101,8 +101,8 @@ export default function ForWhom(): React.JSX.Element {
                     text="Отели"
                 />
                 <ForWhomCard
-                    src={forWhomFourth}
-                    text="Ритейл"
+                    src={forWhomFirst}
+                    text="Кофейни"
                 />
             </Line>
         </Line>
