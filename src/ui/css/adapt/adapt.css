@@ -186,11 +186,11 @@
 
 @media screen and (max-width: 1567px) {
     .wwrap {
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        width: 2688px;
+        /*flex-wrap: nowrap;*/
+        /*overflow-x: scroll;*/
+        /*width: 2688px;*/
         white-space: nowrap;
-        justify-content: flex-start;
+        /*justify-content: flex-start;*/
 
         .list-item-menu {
             min-width: 224px;

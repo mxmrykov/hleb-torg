@@ -203,7 +203,7 @@ export default function ForRetail({setDialog}): React.JSX.Element {
             />
             <ForRetailCard
                 Img={bread15}
-                Name="Фокуса с песто и моцареллой"
+                Name="Фокача с песто и моцареллой"
                 ShadowExt={true}
                 setDialog={setDialog}
             />
