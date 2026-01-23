@@ -16,7 +16,8 @@ export default function ForRetailCard({Img, ShadowExt = false, Name, setDialog})
                         style={{
                             zIndex: 2,
                             maxWidth: "100%",
-                            objectFit: "contain"
+                            objectFit: "contain",
+                            maxHeight: 300,
                         }}
                     />
                     <span className={ShadowExt ? "shadow_yel" : "shadow_yel"} style={ShadowExt ? {backgroundColor: "rgba(227, 153, 8, .53)"} : {}}/>
